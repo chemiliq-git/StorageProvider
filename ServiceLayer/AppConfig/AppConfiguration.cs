@@ -10,6 +10,7 @@ namespace ServiceLayer.AppConfig
 
         public static void SetConfig(IConfiguration configuration)
         {
+            ///tortoiseGit
 			currentConfig = configuration;
         }
 
