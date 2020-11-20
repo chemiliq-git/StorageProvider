@@ -10,8 +10,9 @@ namespace ServiceLayer.AppConfig
 
         public static void SetConfig(IConfiguration configuration)
         {
-            currentConfig = configuration;
+			currentConfig = configuration;
         }
+
 
         public static T GetSetting<T>(string settingName, ILogger logger)
         {
