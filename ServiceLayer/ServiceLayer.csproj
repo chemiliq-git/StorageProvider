@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="RemoteStorage\BlobStorageService_OldVersion.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.7.0" />
+    <PackageReference Include="Azure.Storage.Files.Shares" Version="12.5.0" />
+    <PackageReference Include="Cloudinary.Core.Sync" Version="1.31.0" />
+    <PackageReference Include="ImageProcessor.Core.CoreCompat" Version="1.3.0" />
+    <PackageReference Include="Microsoft.Azure.KeyVault.Core" Version="3.0.5" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataContext\DataContext.csproj" />
+  </ItemGroup>
+
+</Project>
